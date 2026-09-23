@@ -13,3 +13,5 @@ jobs:
           run: ls -la
         - name: Mensagem 
           run: echo "Pipeline de CI do DevOps Tool"
+        - name: erro simulado
+          run: somarCalculadora  
