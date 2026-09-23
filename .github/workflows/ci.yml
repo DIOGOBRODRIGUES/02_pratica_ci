@@ -3,12 +3,13 @@ on: push
 permissions: 
   contents: read 
 jobs:
-   runs-on: ubuntu-latest
-   steps:
-      uses: actions/checkout@v4
-      name: Informação do runner
-      run: uname -a
-      name: Listar arquivos
-      run: ls -la
-      name: Mensagem 
-      run: echo "Pipeline de CI do DevOps Tool"
+   deploy:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v4
+        - name: Informação do runner
+          run: uname -a
+        - name: Listar arquivos
+          run: ls -la
+        - name: Mensagem 
+          run: echo "Pipeline de CI do DevOps Tool"
